@@ -6,7 +6,6 @@ public class DosenDemo05 {
 
         Dosen05[] arrayOfDosen = new Dosen05[3];
 
-        // INPUT
         for (int i = 0; i < arrayOfDosen.length; i++) {
             System.out.println("Masukkan Data Dosen ke-" + (i+1));
 
@@ -28,7 +27,6 @@ public class DosenDemo05 {
             System.out.println("----------------------------------");
         }
 
-        // OUTPUT (tanpa int no)
         for (int i = 0; i < arrayOfDosen.length; i++) {
             System.out.println("Data Dosen ke-" + (i+1));
             System.out.println("Kode          : " + arrayOfDosen[i].kode);
