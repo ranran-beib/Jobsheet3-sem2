@@ -27,15 +27,22 @@ public class DosenDemo05 {
             System.out.println("----------------------------------");
         }
 
-        for (int i = 0; i < arrayOfDosen.length; i++) {
-            System.out.println("Data Dosen ke-" + (i+1));
-            System.out.println("Kode          : " + arrayOfDosen[i].kode);
-            System.out.println("Nama          : " + arrayOfDosen[i].nama);
-            System.out.println("Jenis Kelamin : " + 
-                (arrayOfDosen[i].jenisKelamin ? "Pria" : "Wanita"));
-            System.out.println("Usia          : " + arrayOfDosen[i].usia);
-            System.out.println("----------------------------------");
-        }
+        DataDosen05 data = new DataDosen05();
+
+        System.out.println("\n=== Semua Data Dosen ===");
+        data.dataSemuaDosen(arrayOfDosen);
+
+        System.out.println("\n=== Jumlah Dosen Per Jenis Kelamin ===");
+        data.jumlahDosenPerJenisKelamin(arrayOfDosen);
+
+        System.out.println("\n=== Rata-rata Usia Per Jenis Kelamin ===");
+        data.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+
+        System.out.println("\n=== Dosen Paling Tua ===");
+        data.infoDosenPalingTua(arrayOfDosen);
+
+        System.out.println("\n=== Dosen Paling Muda ===");
+        data.infoDosenPalingMuda(arrayOfDosen);
 
         sc.close();
     }
